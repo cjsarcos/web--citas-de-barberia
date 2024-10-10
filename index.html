@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbería</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Sistema de Citas B a r b e r i a C a r l o s</h1>
+    </header>
+
+    <form id="citaForm" class="formcita">
+      <input
+        type="text"
+        id="nombreCliente"
+        placeholder="Nombre del Cliente"
+        required
+      />
+      <input type="time" id="horaCita" required />
+      <button type="submit">Agregar Cita</button>
+    </form>
+    <div class="nombreeliminar1">
+      <input
+        type="text"
+        id="nombreEliminar"
+        placeholder="Nombre del Cliente a eliminar"
+      />
+      <button id="eliminarCitaBtn">Eliminar Cita</button>
+    </div>
+    <h2 class="citasagendadas">C i t a s - A g e n d a d a s</h2>
+    <section class="zonadecitas">
+      <ul id="listaCitas"></ul>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
